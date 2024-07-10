@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #c div{
+            color: green;
+        }
+        #c>div{
+            /* background-color: orange; */
+            /* font-size: 3px; */
+            border: 3px solid red;
+        }
+        #p+p{
+            background-color: blue;
+        }
+        #p~p{
+            color: brown;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>sb1</p>
+    <div id="p">
+        <div id="c">
+            <div>
+                child
+                <div>
+                    grand child
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p>sb2</p>
+    <p>sb3</p>
+</body>
+</html>
